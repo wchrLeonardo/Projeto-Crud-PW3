@@ -63,5 +63,33 @@ Note que especificamos todo o caminho dos arquivos até serem inseridos no nosso
 
 Agora dentro de uma <kbd> div class </kbd>,que está utilizando a estilização do **BOOTSTRAP5**, nos iremos fazer um link que levará o usuário até uma página de cadastro que AINDA IREMOS CRIAR também, lá na nossa pastinha <kbd>controllers</kbd>.
 O link estará dentro de um botão chamado **Cadastrar**. <br>
-Ainda dentro da <kbd>div class</kbd> criaremos um formulário que enviará os dados para o próprio **index** como objetivo de criar uma barra de busca que será alimentada pela nossa função ```mostrarDados()``` ainda NÃO CRIADA.<br>
-Depois de fechar o formulário e criar uma linha dentro de outra tag ```PHP``` iremos chamar a nossa função ```mostrarDados()``` assim podendo fechar a nossa <kbd>div class</kbd>.
+Ainda dentro da <kbd>div</kbd> criaremos um formulário que enviará os dados para o próprio **index** como objetivo de criar uma barra de busca que será alimentada pela nossa função ```mostrarDados()``` ainda NÃO CRIADA.<br>
+Depois de fechar o formulário e criar uma linha dentro de outra tag ```PHP``` iremos chamar a nossa função ```mostrarDados()``` assim podendo fechar a nossa <kbd>div</kbd>.<br>
+
+![image](https://user-images.githubusercontent.com/128431361/229634175-fb7d641d-c578-440a-8a90-ea7665c4abd7.png)
+
+Dentro de outra tag ```PHP``` inclua o seu rodapé.
+
+![image](https://user-images.githubusercontent.com/128431361/229634272-dcde1af6-3e9f-4f20-b90a-b2653bedb2d6.png)
+
+### Telas de Cadastro e Atualização de Cadastro
+Lembram-se do link que fizemos em nosso **index** para a página **cadastro.php**, agora é hora de vermos como ela irá funcionar<br>
+A tela de cadastro se encontra dentro da pasta <kbd>views</kbd>
+Novamento iremos incluir o nosso cabeçalho, seguido de outra <kbd>div class</kbd> onde iremos criar um formulário que terá como ação o arquivo **cadastrarAluno.php** que SERÁ CRIADO na nossa pasta <kbd>controllers</kbd> posteriormente.
+O formulário terá as <kbd>labels</kbd> **Nome** e **Cidade** com seus respectivos <kbd>inputs</kbd> de texto.
+
+![image](https://user-images.githubusercontent.com/128431361/229636362-60841441-df28-47a4-b2bc-22e23982c0e2.png)
+
+Ainda dentro do formulário iremos adicionar os <kbd>inputs</kbd> do tipo **radio** para escolha do sexo do aluno juntamente do botão **Cadastrar**.
+Fechamento da tag do formulário e fechamento da nossa <kbd>div</kbd>.<br>
+No final de tudo não se esqueça de incluir seu rodapé.
+
+![image](https://user-images.githubusercontent.com/128431361/229639507-54cfe93e-7ca4-4dd8-8df1-4d7a5e3e34c1.png)
+
+Antes de começarmos a fazer nossas funções e comandos do CRUD vamos deixar uma tela preparada para atualizar as informações cadastradas caso o usuário insira informações incorretas e venha querer muda-las posteriormente.<br>
+Estamos falando do nosso arquivo **cadastroAtualiza.php** que ainda se encontra dentro da pasta <kbd>views</kbd><br>
+Como a página de atualização terá que mudar as informações inseridas no banco começaremos incluindo o arquivo **conexao.php** seguido novamente de nosso **header**<br>
+Criaremos outra <kbd>div class</kbd> ainda utilizando a estilização do **Bootstrap5** e iniciaremos com um comando **PHP** pegando o **ID** ou o **codigo** que é a nossa chava primária lá no Banco de Dados. Com isso iremos informar o banco para selecionar da tabela ```aluno``` onde o **codigo** é igual ao da informação que o usuário deseja atualizar.<br>
+Ainda dentro da tag **PHP** criaremos um laço de repetição ```whlile()``` , fecharemos a tag **PHP** logo após isso e iniciaremos outro formulário muito parecido com o anterior para o preenchimento das novas informações que serão atualizadas. 
+
+<kbd>Peço mil perdões Professor, a semana foi muito corrida e acabei falhando na conciliação de estudo, vida pessoal e trabalho, não me isento de nenhuma culpa e fica aqui meu relatório incompleto</kgb>
